@@ -1,0 +1,97 @@
+/* Ümumi stil */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7dff, #33d9b2);
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Mərkəzləşdirilmiş konteyner */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Başlıq stili */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Input sahələri */
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #33d9b2;
+}
+
+/* Hesablama düyməsi */
+.btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #33d9b2;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #28b69d;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* Nəticə və xəbərdarlıq mesajı */
+.result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Mobil uyğunlaşdırma */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
